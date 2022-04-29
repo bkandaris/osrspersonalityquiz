@@ -24,7 +24,7 @@ const questions = [
     id: 2,
     answerA: {
       answer: 'Loyalty',
-      traits: ['loyal'],
+      traits: ['loyalty'],
     },
     answerB: {
       answer: 'Sense of humor',
@@ -56,7 +56,7 @@ const questions = [
     },
     answerD: {
       answer: 'Looking at my phone and wishing it was over',
-      traits: [null],
+      traits: ['gamer'],
     },
   },
 ];

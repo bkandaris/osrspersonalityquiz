@@ -4,8 +4,9 @@ import Questions from '../Questions';
 import { useNavigate } from 'react-router';
 
 const Quiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState();
+  const [currentQuestion, setCurrentQuestion] = useState(null);
   const [questionIndex, setQuestionIndex] = useState(0);
+
   const navigate = useNavigate();
 
   const getQuestion = () => {
@@ -40,9 +41,13 @@ const Quiz = () => {
       <Question
         id={currentQuestion.id}
         question={currentQuestion.question}
+        answerAtraits={currentQuestion.answerA.traits}
         answerA={currentQuestion.answerA.answer}
+        answerBtraits={currentQuestion.answerB.traits}
         answerB={currentQuestion.answerB.answer}
+        answerCtraits={currentQuestion.answerC.traits}
         answerC={currentQuestion.answerC.answer}
+        answerDtraits={currentQuestion.answerD.traits}
         answerD={currentQuestion.answerD.answer}
       />
       <button onClick={nextQuestion}>Question Index</button>

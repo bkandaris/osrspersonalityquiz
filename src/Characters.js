@@ -1,7 +1,7 @@
 const Characters = [
   {
     id: 1,
-    name: 'Evil Bob',
+    charName: 'Evil Bob',
     picture: '',
     description: 'Evil man',
     traits: [],
@@ -9,7 +9,7 @@ const Characters = [
   },
   {
     id: 2,
-    name: 'Dad',
+    charName: 'Dad',
     picture: '',
     description: 'Troll',
     traits: ['loyal'],
@@ -17,7 +17,7 @@ const Characters = [
   },
   {
     id: 3,
-    name: 'Hazelmere',
+    charName: 'Hazelmere',
     picture: '',
     description: 'Gnome',
     traits: ['intelligence', 'loyal', 'honest'],
