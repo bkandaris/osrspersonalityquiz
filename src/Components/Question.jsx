@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Question = () => {
+const Question = ({ id, question, answerA, answerB, answerC, answerD }) => {
   return (
-    <div>Question</div>
-  )
-}
+    <div id={id}>
+      <h3>{question}</h3>
+      <p>{answerA}</p>
+      <p>{answerB}</p>
+      <p>{answerC}</p>
+      <p>{answerD}</p>
+    </div>
+  );
+};
 
-export default Question
+export default Question;
