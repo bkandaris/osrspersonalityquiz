@@ -10,9 +10,13 @@ const Quiz = () => {
     setCurrentQuestion(Questions[questionIndex]);
   };
 
+  const nextQuestion = () => {
+    setQuestionIndex(questionIndex + 1);
+  };
+
   useEffect(() => {
     getQuestion();
-  }, []);
+  }, [getQuestion]);
 
   console.log('static questions');
   console.log('cq', currentQuestion);
@@ -20,6 +24,7 @@ const Quiz = () => {
   if (!currentQuestion) {
     return null;
   }
+  console.log('qi', questionIndex);
 
   return (
     <div>
@@ -32,6 +37,7 @@ const Quiz = () => {
         answerC={currentQuestion.answerC.answer}
         answerD={currentQuestion.answerD.answer}
       />
+      <button onClick={nextQuestion}>Question Index</button>
     </div>
   );
 };
