@@ -1,18 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import Question from '../Components/Question';
 import Questions from '../Questions';
+import { useNavigate } from 'react-router';
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState();
   const [questionIndex, setQuestionIndex] = useState(0);
+  const navigate = useNavigate();
 
   const getQuestion = () => {
     setCurrentQuestion(Questions[questionIndex]);
   };
 
   const nextQuestion = () => {
-    setQuestionIndex(questionIndex + 1);
+    if (Questions.length > questionIndex + 1) {
+      setQuestionIndex(questionIndex + 1);
+    } else {
+      navigate('/results');
+    }
   };
+
+  console.log('Length', Questions.length);
 
   useEffect(() => {
     getQuestion();
