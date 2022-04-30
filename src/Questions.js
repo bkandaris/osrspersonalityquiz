@@ -4,11 +4,11 @@ const questions = [
     id: 1,
     answerA: {
       answer: '0-10',
-      traits: [''],
+      traits: ['responsible'],
     },
     answerB: {
       answer: '10-20',
-      traits: ['gamer'],
+      traits: ['evil'],
     },
     answerC: {
       answer: '20-30',

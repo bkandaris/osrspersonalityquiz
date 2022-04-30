@@ -11,10 +11,10 @@ const Question = ({
   answerCtraits,
   answerD,
   answerDtraits,
+  setSelectedTraits
 }) => {
-  const [selectedTraits, setSelectedTraits] = useState(null);
-  console.log('traits selected', selectedTraits);
-  console.log('TYPE', typeof answerA.traits);
+
+
   return (
     <div id={id}>
       <h3>{question}</h3>

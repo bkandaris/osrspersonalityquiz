@@ -4,7 +4,7 @@ const Characters = [
     charName: 'Evil Bob',
     picture: '',
     description: 'Evil man',
-    traits: [],
+    traits: ['evil'],
     score: 0,
   },
   {
