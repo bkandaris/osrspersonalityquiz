@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import Characters from '../Characters';
+import { useSelector, useDispatch } from 'react-redux';
+import { resetState } from '../redux/actions';
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(resetState());
+  }, [dispatch]);
 
   return (
     <div>

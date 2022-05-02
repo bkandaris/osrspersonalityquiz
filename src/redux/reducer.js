@@ -1,4 +1,4 @@
-import { CHANGE_SCORE } from './actionTypes';
+import { CHANGE_SCORE, RESET_STATE } from './actionTypes';
 import Characters from '../Characters';
 
 const initialState = {
@@ -16,6 +16,8 @@ const reducer = (state = initialState, action) => {
         }
       });
       return { Characters: characters };
+    case RESET_STATE:
+      return { Characters: Characters };
     default:
       return state;
   }
