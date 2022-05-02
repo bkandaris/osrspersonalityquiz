@@ -11,7 +11,10 @@ const reducer = (state = initialState, action) => {
       return state.Characters.map((value, index) => {
         if (action.payload.index === index) {
           console.log('this is the value', value);
+          // Turn below code into array of objects, instead of
+          // object, with objects
           return { ...value, score: (value.score += 1) };
+          // Characters = [stuff in it]
         }
         return value;
       });

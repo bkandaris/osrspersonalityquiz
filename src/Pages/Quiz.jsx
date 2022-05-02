@@ -13,6 +13,7 @@ const Quiz = () => {
   console.log('traits selected', selectedTraits);
 
   const dispatch = useDispatch();
+  // needs to change to just state
   const { Characters } = useSelector((state) => state);
 
   // console.log('what is goin onnnnnn', Chars.Characters[1]);
@@ -29,8 +30,10 @@ const Quiz = () => {
   // let arrayChecker = (arr, target) => target.every((v) => arr.includes(v));
   console.log('this is characters (length)', Characters);
   const incrementScores = (array) => {
+    // Change below to state[0]
     for (let i = 0; i < Characters.length; i++) {
       // targetArray is the the traits array from each character
+      // change below to state[0][i].traits
       let targetArray = Characters[i].traits;
       // This is what happens when there are matches
       if (targetArray.every((trait) => array.includes(trait))) {
