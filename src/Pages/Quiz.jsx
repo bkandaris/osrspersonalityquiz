@@ -4,6 +4,7 @@ import Questions from '../Questions';
 import { useNavigate } from 'react-router';
 
 import { useSelector, useDispatch } from 'react-redux';
+import { changeScore } from '../redux/actions';
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -12,10 +13,12 @@ const Quiz = () => {
   console.log('traits selected', selectedTraits);
 
   const dispatch = useDispatch();
-  const Chars = useSelector((state) => state);
+  const { Characters } = useSelector((state) => state);
 
   // console.log('what is goin onnnnnn', Chars.Characters[1]);
   // console.log('Chars Length', Chars.Characters.length);
+
+  console.log('this be the state characters', Characters);
 
   const navigate = useNavigate();
 
@@ -23,15 +26,17 @@ const Quiz = () => {
     setCurrentQuestion(Questions[questionIndex]);
   };
 
-  let arrayChecker = (arr, target) => target.every((v) => arr.includes(v));
-
+  // let arrayChecker = (arr, target) => target.every((v) => arr.includes(v));
+  console.log('this is characters (length)', Characters);
   const incrementScores = (array) => {
-    for (let i = 0; i < Chars.Characters.length; i++) {
+    for (let i = 0; i < Characters.length; i++) {
       // targetArray is the the traits array from each character
-      let targetArray = Chars.Characters[i].traits;
+      let targetArray = Characters[i].traits;
       // This is what happens when there are matches
       if (targetArray.every((trait) => array.includes(trait))) {
         console.log('this should return once');
+        // Dispatch the action to increase that characters score
+        dispatch(changeScore(i));
         // this is what happens when there are no matches
       } else console.log('this NO RETURN');
     }
