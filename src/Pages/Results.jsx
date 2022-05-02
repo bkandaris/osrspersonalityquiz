@@ -1,12 +1,21 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector} from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const Results = () => {
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { Characters } = useSelector((state) => state);
   console.log('character state in results', Characters);
 
-  return <div></div>;
+  return (
+    <div>
+      <h1>Results</h1>
+      <button
+        onClick={() => {
+          navigate('/');
+        }}></button>
+    </div>
+  );
 };
 
 export default Results;

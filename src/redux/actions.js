@@ -1,3 +1,4 @@
+import { Action } from 'history';
 import { CHANGE_SCORE, RESET_STATE } from './actionTypes';
 
 export const changeScore = (index) => {
@@ -7,9 +8,8 @@ export const changeScore = (index) => {
   };
 };
 
-export const resetState = (payload) => {
+export const resetState = () => {
   return {
     type: RESET_STATE,
-    payload,
   };
 };

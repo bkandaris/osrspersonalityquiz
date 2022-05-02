@@ -17,7 +17,10 @@ const reducer = (state = initialState, action) => {
       });
       return { Characters: characters };
     case RESET_STATE:
-      return { Characters: Characters };
+      const resetCharacters = state.Characters.map((c) => {
+        return { ...c, score: (c.score = 0) };
+      });
+      return { Characters: resetCharacters };
     default:
       return state;
   }

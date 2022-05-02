@@ -10,14 +10,9 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedTraits, setSelectedTraits] = useState(null);
-  console.log('traits selected', selectedTraits);
 
   const dispatch = useDispatch();
-  // needs to change to just state
   const { Characters } = useSelector((state) => state);
-
-  // console.log('what is goin onnnnnn', Chars.Characters[1]);
-  // console.log('Chars Length', Chars.Characters.length);
 
   console.log('this be the state characters', Characters);
 
@@ -30,18 +25,16 @@ const Quiz = () => {
   // let arrayChecker = (arr, target) => target.every((v) => arr.includes(v));
   console.log('this is characters (length)', Characters);
   const incrementScores = (array) => {
-    // Change below to state[0]
     for (let i = 0; i < Characters.length; i++) {
       // targetArray is the the traits array from each character
-      // change below to state[0][i].traits
       let targetArray = Characters[i].traits;
       // This is what happens when there are matches
       if (targetArray.some((trait) => array.includes(trait))) {
         console.log('this should return once');
-        // Dispatch the action to increase that characters score
+        // Dispatch the action to increase that character's score
         dispatch(changeScore(i));
         // this is what happens when there are no matches
-      } else console.log('this NO RETURN');
+      } else console.log('No Matches');
     }
   };
 
