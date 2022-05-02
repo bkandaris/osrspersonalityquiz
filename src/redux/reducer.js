@@ -8,20 +8,17 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_SCORE:
-      return state.Characters.map((value, index) => {
-        if (action.payload.index === index) {
-          console.log('this is the value', value);
-          // Turn below code into array of objects, instead of
-          // object, with objects
-          return { ...value, score: (value.score += 1) };
-          // Characters = [stuff in it]
+      const characters = state.Characters.map((c, i) => {
+        if (action.payload.index === i) {
+          return { ...c, score: (c.score += 1) };
+        } else {
+          return c;
         }
-        return value;
       });
+      return { Characters: characters };
     default:
       return state;
   }
 };
 
 export default reducer;
-

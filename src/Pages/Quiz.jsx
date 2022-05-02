@@ -36,7 +36,7 @@ const Quiz = () => {
       // change below to state[0][i].traits
       let targetArray = Characters[i].traits;
       // This is what happens when there are matches
-      if (targetArray.every((trait) => array.includes(trait))) {
+      if (targetArray.some((trait) => array.includes(trait))) {
         console.log('this should return once');
         // Dispatch the action to increase that characters score
         dispatch(changeScore(i));

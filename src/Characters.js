@@ -20,7 +20,7 @@ const Characters = [
     charName: 'Hazelmere',
     picture: '',
     description: 'Gnome',
-    traits: ['intelligence', 'loyal', 'honest'],
+    traits: ['loyal'],
     score: 0,
   },
 ];
