@@ -9,19 +9,22 @@ const HomePage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    localStorage.clear();
     dispatch(resetState());
   }, []);
 
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Description of quiz</p>
-      <button
-        onClick={() => {
-          navigate('/quiz');
-        }}>
-        Link to quiz
-      </button>
+    <div className='home-wrapper'>
+      <div className='home-text-wrapper'>
+        <h1 className='home-header'>RuneScape Personality Quiz</h1>
+        <button
+          className='home-button'
+          onClick={() => {
+            navigate('/quiz');
+          }}>
+          Start Quiz
+        </button>
+      </div>
     </div>
   );
 };
