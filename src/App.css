@@ -41,3 +41,90 @@
   color: rgb(25, 152, 5);
   color: black;
 }
+
+/* Quiz Page */
+
+.quiz-wrapper {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url('https://wallpaperaccess.com/full/1583519.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.question-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-wrapper > h3 {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+
+.question {
+  margin: 0.6rem;
+}
+
+.answers {
+  text-align: left;
+  padding: 0.9rem;
+}
+
+.answers > p {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+.answers > p:hover {
+  color: rgb(43, 128, 0);
+  cursor: pointer;
+}
+
+.question-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: rgb(25, 152, 5);
+  padding: 5px;
+  margin: 10px auto;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 180px;
+}
+
+.question-button:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(60, 164, 233, 0.4);
+  color: black;
+  color: rgb(25, 152, 5);
+}
+
+.selected {
+  color: rgb(25, 152, 5);
+}
+
+.selected-answer:hover {
+  color: white !important;
+  cursor: default !important;
+}
+
+/* Results */
+.results-wrapper {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url('https://wallpapercave.com/wp/wp8628975.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

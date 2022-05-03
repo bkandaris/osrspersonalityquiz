@@ -11,37 +11,42 @@ const Question = ({
   answerCtraits,
   answerD,
   answerDtraits,
-  setSelectedTraits
+  setSelectedTraits,
+  setSelectedAnswer,
 }) => {
-
-
   return (
     <div id={id}>
-      <h3>{question}</h3>
-      <p
-        onClick={() => {
-          setSelectedTraits(answerAtraits);
-        }}>
-        {answerA}
-      </p>
-      <p
-        onClick={() => {
-          setSelectedTraits(answerBtraits);
-        }}>
-        {answerB}
-      </p>
-      <p
-        onClick={() => {
-          setSelectedTraits(answerCtraits);
-        }}>
-        {answerC}
-      </p>
-      <p
-        onClick={() => {
-          setSelectedTraits(answerDtraits);
-        }}>
-        {answerD}
-      </p>
+      <h3 className='question'>{question}</h3>
+      <div className='answers'>
+        <p
+          onClick={() => {
+            setSelectedAnswer(answerA);
+            setSelectedTraits(answerAtraits);
+          }}>
+          A: {answerA}
+        </p>
+        <p
+          onClick={() => {
+            setSelectedAnswer(answerB);
+            setSelectedTraits(answerBtraits);
+          }}>
+          B: {answerB}
+        </p>
+        <p
+          onClick={() => {
+            setSelectedAnswer(answerC);
+            setSelectedTraits(answerCtraits);
+          }}>
+          C: {answerC}
+        </p>
+        <p
+          onClick={() => {
+            setSelectedAnswer(answerD);
+            setSelectedTraits(answerDtraits);
+          }}>
+          D: {answerD}
+        </p>
+      </div>
     </div>
   );
 };

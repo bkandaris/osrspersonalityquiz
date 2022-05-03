@@ -10,11 +10,10 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedTraits, setSelectedTraits] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState('');
 
   const dispatch = useDispatch();
   const { Characters } = useSelector((state) => state);
-
-  console.log('this be the state characters', Characters);
 
   const navigate = useNavigate();
 
@@ -22,8 +21,6 @@ const Quiz = () => {
     setCurrentQuestion(Questions[questionIndex]);
   };
 
-  // let arrayChecker = (arr, target) => target.every((v) => arr.includes(v));
-  console.log('this is characters (length)', Characters);
   const incrementScores = (array) => {
     for (let i = 0; i < Characters.length; i++) {
       // targetArray is the the traits array from each character
@@ -40,6 +37,7 @@ const Quiz = () => {
 
   const nextQuestion = () => {
     incrementScores(selectedTraits);
+    setSelectedAnswer('');
     if (Questions.length > questionIndex + 1) {
       setQuestionIndex(questionIndex + 1);
     } else {
@@ -56,22 +54,28 @@ const Quiz = () => {
   }
 
   return (
-    <div>
-      <h1>Quiz Page</h1>
-      <Question
-        setSelectedTraits={setSelectedTraits}
-        id={currentQuestion.id}
-        question={currentQuestion.question}
-        answerAtraits={currentQuestion.answerA.traits}
-        answerA={currentQuestion.answerA.answer}
-        answerBtraits={currentQuestion.answerB.traits}
-        answerB={currentQuestion.answerB.answer}
-        answerCtraits={currentQuestion.answerC.traits}
-        answerC={currentQuestion.answerC.answer}
-        answerDtraits={currentQuestion.answerD.traits}
-        answerD={currentQuestion.answerD.answer}
-      />
-      <button onClick={nextQuestion}>Question Index</button>
+    <div className='quiz-wrapper'>
+      <div className='question-wrapper'>
+        <h3>Question #{questionIndex + 1}</h3>
+        <Question
+          setSelectedTraits={setSelectedTraits}
+          setSelectedAnswer={setSelectedAnswer}
+          id={currentQuestion.id}
+          question={currentQuestion.question}
+          answerAtraits={currentQuestion.answerA.traits}
+          answerA={currentQuestion.answerA.answer}
+          answerBtraits={currentQuestion.answerB.traits}
+          answerB={currentQuestion.answerB.answer}
+          answerCtraits={currentQuestion.answerC.traits}
+          answerC={currentQuestion.answerC.answer}
+          answerDtraits={currentQuestion.answerD.traits}
+          answerD={currentQuestion.answerD.answer}
+        />
+        <p>Answer: {selectedAnswer}</p>
+        <button className='question-button' onClick={nextQuestion}>
+          Submit Answer
+        </button>
+      </div>
     </div>
   );
 };
