@@ -44,7 +44,7 @@ const questions = [
     id: 3,
     answerA: {
       answer: 'Petting whatever dog or cat is around',
-      traits: ['kind', 'loyal'],
+      traits: ['kind', 'loyal', 'empathy'],
     },
     answerB: {
       answer: 'Having a conversation about the latest book I have read',
@@ -64,15 +64,15 @@ const questions = [
     id: 4,
     answerA: {
       answer: 'Honesty / Loyalty',
-      traits: ['loyal', 'honest', 'kind'],
+      traits: ['loyal', 'honest', 'kind', 'intelligence'],
     },
     answerB: {
-      answer: 'kindness',
+      answer: 'Kindness',
       traits: ['honest', 'kind', 'predictable'],
     },
     answerC: {
       answer: 'Respectful',
-      traits: ['self-reliant', 'kind'],
+      traits: ['self-reliant', 'kind', 'intelligence'],
     },
     answerD: {
       answer: 'Playfulness',
@@ -109,7 +109,14 @@ const questions = [
     },
     answerB: {
       answer: 'It was my idea to pull the prank',
-      traits: ['careless', 'impulsive', 'creative', 'courage', 'power hungry'],
+      traits: [
+        'careless',
+        'impulsive',
+        'creative',
+        'courage',
+        'power hungry',
+        'powerful',
+      ],
     },
     answerC: {
       answer: 'Nervously joining along even though I do not want to do it',
@@ -133,8 +140,7 @@ const questions = [
       traits: ['self-reliant', 'gamer', 'intelligence'],
     },
     answerC: {
-      answer:
-        'My friends will learn and show me how after they learn how to do it',
+      answer: 'My friends will learn and show me how to do it',
       traits: ['intelligence', 'kind'],
     },
     answerD: {
@@ -236,7 +242,7 @@ const questions = [
     id: 12,
     answerA: {
       answer: 'Ice barraging everything that gets in my way!',
-      traits: ['powerful', 'power hungry'],
+      traits: ['powerful', 'power hungry', 'predictable'],
     },
     answerB: {
       answer: 'I am not wasting xp spending time here',
@@ -248,7 +254,7 @@ const questions = [
     },
     answerD: {
       answer: 'Giving callouts for my team',
-      traits: ['leader', 'intelligence', 'power hungry'],
+      traits: ['leader', 'intelligence', 'power hungry', 'predictable'],
     },
   },
   {
@@ -265,11 +271,71 @@ const questions = [
     },
     answerC: {
       answer: 'Show them a better alternative',
-      traits: ['creative', 'kind', 'leader'],
+      traits: ['creative', 'kind', 'leader', 'predictable'],
     },
     answerD: {
       answer: 'Teleport away, I cannot be seen with them!',
       traits: ['greedy', 'stubborn'],
+    },
+  },
+  {
+    question: 'If I could choose a superpower, it would be...',
+    id: 13,
+    answerA: {
+      answer: 'Invisibility',
+      traits: ['greedy', 'impulsive', 'careless'],
+    },
+    answerB: {
+      answer: 'Strength',
+      traits: ['powerful', 'power hungry', 'gamer'],
+    },
+    answerC: {
+      answer: 'Mind-reading',
+      traits: ['creative', 'kind', 'leader', 'gamer', 'intelligence'],
+    },
+    answerD: {
+      answer: 'Flight',
+      traits: ['greedy', 'stubborn', 'impulsive', 'careless'],
+    },
+  },
+  {
+    question: 'What animal are you most like?',
+    id: 14,
+    answerA: {
+      answer: 'Cat',
+      traits: ['greedy', 'impulsive', 'careless', 'stubborn'],
+    },
+    answerB: {
+      answer: 'Dog',
+      traits: ['kind', 'loyal', 'gamer', 'intelligence'],
+    },
+    answerC: {
+      answer: 'Bird',
+      traits: ['creative'],
+    },
+    answerD: {
+      answer: 'Bear',
+      traits: ['greedy', 'stubborn', 'impulsive', 'careless'],
+    },
+  },
+  {
+    question: 'I can only choose one...',
+    id: 15,
+    answerA: {
+      answer: 'Fame and fortune',
+      traits: ['greedy', 'impulsive', 'careless', 'stubborn'],
+    },
+    answerB: {
+      answer: 'World peace',
+      traits: ['kind', 'empathy', 'predictable'],
+    },
+    answerC: {
+      answer: 'My crush to fall in love with me',
+      traits: ['greedy', 'stubborn', 'careless', 'impulsive'],
+    },
+    answerD: {
+      answer: 'End world hunger',
+      traits: ['empathy', 'intelligence'],
     },
   },
 ];

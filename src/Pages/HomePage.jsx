@@ -22,7 +22,7 @@ const HomePage = () => {
           onClick={() => {
             navigate('/quiz');
           }}>
-          Start Quiz
+          Start
         </button>
       </div>
     </div>
