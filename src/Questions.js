@@ -4,19 +4,19 @@ const questions = [
     id: 1,
     answerA: {
       answer: '0-10',
-      traits: ['evil'],
+      traits: ['humor'],
     },
     answerB: {
       answer: '10-20',
-      traits: ['evil'],
+      traits: ['predictable, careless'],
     },
     answerC: {
       answer: '20-30',
-      traits: ['gamer'],
+      traits: ['self-reliant, impulsvie'],
     },
     answerD: {
       answer: 'I eat sleep and drink OSRS',
-      traits: ['humor'],
+      traits: ['stubborn'],
     },
   },
   {
@@ -28,15 +28,15 @@ const questions = [
     },
     answerB: {
       answer: 'Sense of humor',
-      traits: ['sense of humor'],
+      traits: ['honest'],
     },
     answerC: {
       answer: 'Intelligence',
-      traits: ['intelligence'],
+      traits: ['empathy'],
     },
     answerD: {
       answer: 'Kindness',
-      traits: ['humor'],
+      traits: ['responsible'],
     },
   },
   {
@@ -44,19 +44,19 @@ const questions = [
     id: 3,
     answerA: {
       answer: 'Petting whatever dog or cat is around',
-      traits: ['kindness'],
+      traits: ['impulsive'],
     },
     answerB: {
       answer: 'Having a conversation about the latest book I have read',
-      traits: ['intelligence'],
+      traits: ['intelligence', 'loyal', 'gamer', 'courage', 'outspoken'],
     },
     answerC: {
       answer: 'Doing a Kegstand',
-      traits: ['gamer', 'courage', 'outspoken'],
+      traits: ['outspoken'],
     },
     answerD: {
       answer: 'Looking at my phone and wishing it was over',
-      traits: ['humor', 'courage'],
+      traits: ['intelligence', 'loyal', 'gamer', 'courage', 'outspoken'],
     },
   },
 ];

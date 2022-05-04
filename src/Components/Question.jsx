@@ -12,6 +12,7 @@ const Question = ({
   answerD,
   answerDtraits,
   setSelectedTraits,
+  setSelectedAnswer,
 }) => {
   return (
     <div id={id}>
@@ -19,29 +20,29 @@ const Question = ({
       <div className='answers'>
         <p
           onClick={() => {
-  
             setSelectedTraits(answerAtraits);
+            setSelectedAnswer(answerA);
           }}>
           A: {answerA}
         </p>
         <p
           onClick={() => {
-
             setSelectedTraits(answerBtraits);
+            setSelectedAnswer(answerB);
           }}>
           B: {answerB}
         </p>
         <p
           onClick={() => {
-    
             setSelectedTraits(answerCtraits);
+            setSelectedAnswer(answerC);
           }}>
           C: {answerC}
         </p>
         <p
           onClick={() => {
-
             setSelectedTraits(answerDtraits);
+            setSelectedAnswer(answerD);
           }}>
           D: {answerD}
         </p>

@@ -10,6 +10,7 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedTraits, setSelectedTraits] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState();
 
   const dispatch = useDispatch();
   const { Characters } = useSelector((state) => state);
@@ -40,6 +41,7 @@ const Quiz = () => {
     if (Questions.length > questionIndex + 1) {
       setQuestionIndex(questionIndex + 1);
       setSelectedTraits(null);
+      setSelectedAnswer(null);
     } else {
       navigate('/results');
     }
@@ -55,12 +57,15 @@ const Quiz = () => {
     return null;
   }
 
+  console.log('selectedAnswer', selectedAnswer);
+
   return (
     <div className='quiz-wrapper'>
       <div className='question-wrapper'>
         <h3>Question #{questionIndex + 1}</h3>
         <Question
           setSelectedTraits={setSelectedTraits}
+          setSelectedAnswer={setSelectedAnswer}
           id={currentQuestion.id}
           question={currentQuestion.question}
           answerAtraits={currentQuestion.answerA.traits}
@@ -72,6 +77,7 @@ const Quiz = () => {
           answerDtraits={currentQuestion.answerD.traits}
           answerD={currentQuestion.answerD.answer}
         />
+        <p>Answer: {selectedAnswer}</p>
         <button
           disabled={selectedTraits ? null : false}
           className='question-button'
