@@ -15,12 +15,11 @@ const Results = () => {
   // destructure the last indexed object in the array
   let { charName, picture, alt, description } =
     Characters[Characters.length - 1];
-  console.log('charName', charName);
-  console.log('picture', picture);
+
 
   return (
     <div className='results-wrapper'>
-      <h1>Results</h1>
+      <h1>You are...</h1>
       <Character
         charName={charName}
         picture={picture}

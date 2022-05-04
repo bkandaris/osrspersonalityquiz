@@ -4,7 +4,7 @@ const questions = [
     id: 1,
     answerA: {
       answer: '0-10',
-      traits: ['responsible'],
+      traits: ['evil'],
     },
     answerB: {
       answer: '10-20',
@@ -16,7 +16,7 @@ const questions = [
     },
     answerD: {
       answer: 'I eat sleep and drink OSRS',
-      traits: ['gamer'],
+      traits: ['humor'],
     },
   },
   {
@@ -36,7 +36,7 @@ const questions = [
     },
     answerD: {
       answer: 'Kindness',
-      traits: ['kindness'],
+      traits: ['humor'],
     },
   },
   {
@@ -56,7 +56,7 @@ const questions = [
     },
     answerD: {
       answer: 'Looking at my phone and wishing it was over',
-      traits: ['gamer'],
+      traits: ['humor', 'courage'],
     },
   },
 ];

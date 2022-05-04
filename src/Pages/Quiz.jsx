@@ -10,7 +10,6 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedTraits, setSelectedTraits] = useState(null);
-  const [selectedAnswer, setSelectedAnswer] = useState('');
 
   const dispatch = useDispatch();
   const { Characters } = useSelector((state) => state);
@@ -37,13 +36,16 @@ const Quiz = () => {
 
   const nextQuestion = () => {
     incrementScores(selectedTraits);
-    setSelectedAnswer('');
+    // setSelectedAnswer('');
     if (Questions.length > questionIndex + 1) {
       setQuestionIndex(questionIndex + 1);
+      setSelectedTraits(null);
     } else {
       navigate('/results');
     }
   };
+
+  console.log('selectedTraits', selectedTraits);
 
   useEffect(() => {
     getQuestion();
@@ -59,7 +61,6 @@ const Quiz = () => {
         <h3>Question #{questionIndex + 1}</h3>
         <Question
           setSelectedTraits={setSelectedTraits}
-          setSelectedAnswer={setSelectedAnswer}
           id={currentQuestion.id}
           question={currentQuestion.question}
           answerAtraits={currentQuestion.answerA.traits}
@@ -71,8 +72,10 @@ const Quiz = () => {
           answerDtraits={currentQuestion.answerD.traits}
           answerD={currentQuestion.answerD.answer}
         />
-        <p>Answer: {selectedAnswer}</p>
-        <button className='question-button' onClick={nextQuestion}>
+        <button
+          disabled={selectedTraits ? null : false}
+          className='question-button'
+          onClick={nextQuestion}>
           Submit Answer
         </button>
       </div>

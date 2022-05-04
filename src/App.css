@@ -118,8 +118,8 @@
 /* Results */
 .results-wrapper {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url('https://wallpapercave.com/wp/wp8628975.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('https://i.gyazo.com/3b6c4ec45b033770ae5838160a191110.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -127,4 +127,56 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.results-wrapper > button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 5px;
+  margin: 10px auto;
+  color: black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 100px;
+}
+
+.results-wrapper > button:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(60, 164, 233, 0.4);
+  color: black;
+  color: rgb(25, 152, 5);
+}
+
+.results-wrapper > h1 {
+  color: black;
+}
+
+/* Character */
+
+.char-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.char-wrapper > h3 {
+  font-size: 1.8rem;
+  color: black;
+  margin: 10px auto;
+}
+
+.char-wrapper > img {
+  height: 300px;
+}
+
+/* hidden */
+
+.error-message {
+  color: red;
+}
+
+.hidden {
+  display: none;
 }
