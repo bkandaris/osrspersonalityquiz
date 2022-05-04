@@ -71,7 +71,7 @@ const questions = [
       traits: ['honest', 'kind', 'predictable'],
     },
     answerC: {
-      answer: 'Respectful',
+      answer: 'Respectfulness',
       traits: ['self-reliant', 'kind', 'intelligence'],
     },
     answerD: {
