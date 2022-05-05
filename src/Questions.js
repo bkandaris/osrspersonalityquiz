@@ -16,7 +16,7 @@ const questions = [
     },
     answerD: {
       answer: 'I eat sleep and drink OSRS',
-      traits: ['gamer', 'predictable'],
+      traits: ['gamer', 'predictable', 'careless'],
     },
   },
   {
@@ -56,7 +56,7 @@ const questions = [
     },
     answerD: {
       answer: 'Looking at my phone and wishing it was over',
-      traits: ['stubborn', 'greedy'],
+      traits: ['stubborn', 'greedy', 'careless'],
     },
   },
   {
@@ -88,7 +88,7 @@ const questions = [
     },
     answerB: {
       answer: 'I pick something new for us to try',
-      traits: ['careless', 'impulsive'],
+      traits: ['careless', 'impulsive', 'courage'],
     },
     answerC: {
       answer: 'Do whatever my friends want to do',
@@ -125,7 +125,7 @@ const questions = [
     answerD: {
       answer:
         'Try talking my friends out of it, she does not deserve to be pranked',
-      traits: ['kind', 'honest', 'leader'],
+      traits: ['kind', 'honest', 'leader', 'courage'],
     },
   },
   {
@@ -162,11 +162,11 @@ const questions = [
     },
     answerC: {
       answer: 'Tea',
-      traits: ['creative', 'responsible'],
+      traits: ['creative', 'stubborn'],
     },
     answerD: {
       answer: 'Water',
-      traits: ['predictable', 'honest'],
+      traits: ['honest'],
     },
   },
   {
@@ -183,7 +183,7 @@ const questions = [
     },
     answerC: {
       answer: 'Going out and getting donations from people in the community',
-      traits: ['kind', 'persuasive', 'self-reliant'],
+      traits: ['kind', 'persuasive', 'self-reliant', 'courage'],
     },
     answerD: {
       answer: 'Creating a new plan to increase funds',
@@ -195,18 +195,11 @@ const questions = [
     id: 10,
     answerA: {
       answer: '3D Doritos',
-      traits: ['creative', 'kind', 'humor'],
+      traits: ['creative', 'kind', 'humor', 'stubborn'],
     },
     answerB: {
       answer: 'Deep fried pickle spears',
-      traits: [
-        'honest',
-        'gamer',
-        'empathy',
-        'persuasive',
-        'responsible',
-        'predictable',
-      ],
+      traits: ['honest', 'gamer', 'empathy', 'responsible', 'predictable'],
     },
     answerC: {
       answer: 'Deep fried pickle chips',
@@ -222,11 +215,11 @@ const questions = [
     id: 11,
     answerA: {
       answer: 'Finally buy that Scythe I have always wanted',
-      traits: ['power hungry', 'greed', 'impulsive'],
+      traits: ['power hungry', 'greed', 'impulsive', 'stubborn'],
     },
     answerB: {
       answer: 'Max all of my stats using the fastest methods',
-      traits: ['gamer', 'predictable', 'responsible'],
+      traits: ['gamer', 'responsible'],
     },
     answerC: {
       answer: 'Host a drop party at my POH',
@@ -271,7 +264,7 @@ const questions = [
     },
     answerC: {
       answer: 'Show them a better alternative',
-      traits: ['creative', 'kind', 'leader', 'predictable'],
+      traits: ['creative', 'kind', 'leader'],
     },
     answerD: {
       answer: 'Teleport away, I cannot be seen with them!',
@@ -287,7 +280,7 @@ const questions = [
     },
     answerB: {
       answer: 'Strength',
-      traits: ['powerful', 'power hungry', 'gamer'],
+      traits: ['powerful', 'power hungry', 'courage', 'gamer'],
     },
     answerC: {
       answer: 'Mind-reading',
@@ -327,7 +320,7 @@ const questions = [
     },
     answerB: {
       answer: 'World peace',
-      traits: ['kind', 'empathy', 'predictable'],
+      traits: ['kind', 'empathy'],
     },
     answerC: {
       answer: 'My crush to fall in love with me',
@@ -336,6 +329,26 @@ const questions = [
     answerD: {
       answer: 'End world hunger',
       traits: ['empathy', 'intelligence'],
+    },
+  },
+  {
+    question: 'My favorite OSRS player is...',
+    id: 16,
+    answerA: {
+      answer: 'Who is React',
+      traits: ['stubborn', 'impulsive', 'greedy'],
+    },
+    answerB: {
+      answer: 'Who is React',
+      traits: ['stubborn', 'impulsive', 'greedy'],
+    },
+    answerC: {
+      answer: 'Who is React',
+      traits: ['stubborn', 'impulsive', 'greedy'],
+    },
+    answerD: {
+      answer: 'who is react (but in all lowercase)',
+      traits: ['stubborn', 'impulsive', 'greedy'],
     },
   },
 ];
