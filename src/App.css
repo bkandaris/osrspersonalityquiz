@@ -175,7 +175,7 @@
 }
 
 .char-wrapper > img {
-  width: 150px;
+  max-width: 100px;
   height: auto;
   margin: 0.8rem;
 }

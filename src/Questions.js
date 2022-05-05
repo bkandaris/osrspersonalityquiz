@@ -4,7 +4,7 @@ const questions = [
     id: 1,
     answerA: {
       answer: '0-10',
-      traits: ['responsible'],
+      traits: ['intelligence'],
     },
     answerB: {
       answer: '10-20',
@@ -12,11 +12,11 @@ const questions = [
     },
     answerC: {
       answer: '20-30',
-      traits: ['gamer'],
+      traits: ['predictable'],
     },
     answerD: {
       answer: 'I eat sleep and drink OSRS',
-      traits: ['gamer', 'predictable', 'careless'],
+      traits: ['gamer', 'predictable'],
     },
   },
   {
@@ -24,19 +24,19 @@ const questions = [
     id: 2,
     answerA: {
       answer: 'Loyalty',
-      traits: ['loyal', 'honest', 'kind'],
+      traits: ['loyal'],
     },
     answerB: {
       answer: 'Sense of humor',
-      traits: ['humor', 'kind', 'careless', 'outspoken'],
+      traits: ['humor'],
     },
     answerC: {
       answer: 'Intelligence',
-      traits: ['empathy', 'self-reliance', 'leader'],
+      traits: ['intelligence'],
     },
     answerD: {
       answer: 'Kindness',
-      traits: ['kind'],
+      traits: ['empathy', 'kind'],
     },
   },
   {
@@ -44,7 +44,7 @@ const questions = [
     id: 3,
     answerA: {
       answer: 'Petting whatever dog or cat is around',
-      traits: ['kind', 'loyal', 'empathy'],
+      traits: ['empathy', 'kind'],
     },
     answerB: {
       answer: 'Having a conversation about the latest book I have read',
@@ -52,11 +52,11 @@ const questions = [
     },
     answerC: {
       answer: 'Doing a Kegstand',
-      traits: ['outspoken', 'careless', 'impulsive', 'gamer', 'humor'],
+      traits: ['powerful', 'humor', 'courage', 'impulsive', 'careless'],
     },
     answerD: {
       answer: 'Looking at my phone and wishing it was over',
-      traits: ['stubborn', 'greedy', 'careless'],
+      traits: ['predictable'],
     },
   },
   {
@@ -64,19 +64,19 @@ const questions = [
     id: 4,
     answerA: {
       answer: 'Honesty / Loyalty',
-      traits: ['loyal', 'honest', 'kind', 'intelligence'],
+      traits: ['loyal'],
     },
     answerB: {
       answer: 'Kindness',
-      traits: ['honest', 'kind', 'predictable'],
+      traits: ['kind'],
     },
     answerC: {
       answer: 'Respectfulness',
-      traits: ['self-reliant', 'kind', 'intelligence'],
+      traits: ['empathy'],
     },
     answerD: {
       answer: 'Playfulness',
-      traits: ['humor', 'creative'],
+      traits: ['humor'],
     },
   },
   {
@@ -84,48 +84,41 @@ const questions = [
     id: 5,
     answerA: {
       answer: 'I suggest going to our normal hangout',
-      traits: ['predictable', 'loyal'],
+      traits: ['predictable'],
     },
     answerB: {
       answer: 'I pick something new for us to try',
-      traits: ['careless', 'impulsive', 'courage'],
+      traits: ['persuasive', 'leader', 'impulsive', 'creative'],
     },
     answerC: {
       answer: 'Do whatever my friends want to do',
-      traits: ['loyal', 'kind', 'predictable'],
+      traits: ['loyal'],
     },
     answerD: {
       answer: 'Going out? I have xp to gain!',
-      traits: ['gamer'],
+      traits: ['gamer', 'greedy'],
     },
   },
   {
     question:
-      'Your friends are about to prank the lady next door. What is your role?',
+      'Your friends are about to play a mean prank on the lady next door. What is your role?',
     id: 6,
     answerA: {
       answer: 'I am the lookout',
-      traits: ['responsible'],
+      traits: ['loyal'],
     },
     answerB: {
       answer: 'It was my idea to pull the prank',
-      traits: [
-        'careless',
-        'impulsive',
-        'creative',
-        'courage',
-        'power hungry',
-        'powerful',
-      ],
+      traits: ['humor', 'impulsive', 'careless'],
     },
     answerC: {
       answer: 'Nervously joining along even though I do not want to do it',
-      traits: ['predictable', 'loyal'],
+      traits: ['courage'],
     },
     answerD: {
       answer:
         'Try talking my friends out of it, she does not deserve to be pranked',
-      traits: ['kind', 'honest', 'leader', 'courage'],
+      traits: ['honest', 'kind'],
     },
   },
   {
@@ -133,19 +126,19 @@ const questions = [
     id: 7,
     answerA: {
       answer: 'Probably still skilling',
-      traits: ['impulsive'],
+      traits: ['responsible'],
     },
     answerB: {
       answer: 'Wait for a guide to come out on the raid',
-      traits: ['self-reliant', 'gamer', 'intelligence'],
+      traits: ['predictable'],
     },
     answerC: {
       answer: 'My friends will learn and show me how to do it',
-      traits: ['intelligence', 'kind'],
+      traits: ['persuasive'],
     },
     answerD: {
       answer: 'YOLO LETS GO!!!',
-      traits: ['self-reliant', 'creative', 'courage', 'leader', 'power hungry'],
+      traits: ['powerful', 'gamer', 'impulsive'],
     },
   },
   {
@@ -154,19 +147,19 @@ const questions = [
     id: 8,
     answerA: {
       answer: 'Orange Juice (No pulp ofc)',
-      traits: ['gamer', 'outspoken', 'impulsive'],
+      traits: ['gamer'],
     },
     answerB: {
       answer: 'Coffee',
-      traits: ['responsible', 'intelligence'],
+      traits: ['honest'],
     },
     answerC: {
       answer: 'Tea',
-      traits: ['creative', 'stubborn'],
+      traits: ['intelligence'],
     },
     answerD: {
       answer: 'Water',
-      traits: ['honest'],
+      traits: ['outspoken'],
     },
   },
   {
@@ -175,19 +168,19 @@ const questions = [
     id: 9,
     answerA: {
       answer: 'Handling all of the finances',
-      traits: ['responsible', 'intelligence'],
+      traits: ['intelligence', 'predictable'],
     },
     answerB: {
       answer: 'Assigning tasks to new members',
-      traits: ['creative', 'leader', 'persuasive', 'outspoken'],
+      traits: ['persuasive', 'leader'],
     },
     answerC: {
       answer: 'Going out and getting donations from people in the community',
-      traits: ['kind', 'persuasive', 'self-reliant', 'courage'],
+      traits: ['courage', 'outspoken'],
     },
     answerD: {
       answer: 'Creating a new plan to increase funds',
-      traits: ['intelligence', 'loyal', 'gamer', 'courage', 'outspoken'],
+      traits: ['power hungry'],
     },
   },
   {
@@ -195,19 +188,19 @@ const questions = [
     id: 10,
     answerA: {
       answer: '3D Doritos',
-      traits: ['creative', 'kind', 'humor', 'stubborn'],
+      traits: ['persuasive'],
     },
     answerB: {
       answer: 'Deep fried pickle spears',
-      traits: ['honest', 'gamer', 'empathy', 'responsible', 'predictable'],
+      traits: ['power hungry'],
     },
     answerC: {
       answer: 'Deep fried pickle chips',
-      traits: ['loyal', 'honest', 'intelligence', 'empathy'],
+      traits: ['intelligence'],
     },
     answerD: {
       answer: 'Buttered bread with salt and pepper',
-      traits: ['outspoken', 'leader', 'gamer'],
+      traits: ['powerful'],
     },
   },
   {
@@ -215,19 +208,19 @@ const questions = [
     id: 11,
     answerA: {
       answer: 'Finally buy that Scythe I have always wanted',
-      traits: ['power hungry', 'greed', 'impulsive', 'stubborn'],
+      traits: ['powerful', 'greedy'],
     },
     answerB: {
       answer: 'Max all of my stats using the fastest methods',
-      traits: ['gamer', 'responsible'],
+      traits: ['gamer', 'predictable'],
     },
     answerC: {
       answer: 'Host a drop party at my POH',
-      traits: ['kind', 'humor'],
+      traits: ['empathy', 'kind'],
     },
     answerD: {
       answer: 'Let my friends tell me what gear to buy with it',
-      traits: ['predictable', 'outspoken'],
+      traits: ['responsible'],
     },
   },
   {
@@ -235,19 +228,19 @@ const questions = [
     id: 12,
     answerA: {
       answer: 'Ice barraging everything that gets in my way!',
-      traits: ['powerful', 'power hungry', 'predictable'],
+      traits: ['powerful'],
     },
     answerB: {
       answer: 'I am not wasting xp spending time here',
-      traits: ['greedy', 'predictable'],
+      traits: ['gamer', 'greedy'],
     },
     answerC: {
       answer: 'Doing emotes and telling people to sit',
-      traits: ['creative', 'humor'],
+      traits: ['humor'],
     },
     answerD: {
       answer: 'Giving callouts for my team',
-      traits: ['leader', 'intelligence', 'power hungry', 'predictable'],
+      traits: ['power hungry', 'leader', 'outspoken'],
     },
   },
   {
@@ -256,19 +249,19 @@ const questions = [
     id: 12,
     answerA: {
       answer: 'Looks good',
-      traits: ['kind', 'empathy'],
+      traits: ['empathy'],
     },
     answerB: {
       answer: 'Crack a joke about how they are dressed',
-      traits: ['humor', 'creative', 'outspoken'],
+      traits: ['humor'],
     },
     answerC: {
       answer: 'Show them a better alternative',
-      traits: ['creative', 'kind', 'leader'],
+      traits: ['honest', 'kind'],
     },
     answerD: {
       answer: 'Teleport away, I cannot be seen with them!',
-      traits: ['greedy', 'stubborn'],
+      traits: ['predictable', 'greedy'],
     },
   },
   {
@@ -276,19 +269,19 @@ const questions = [
     id: 13,
     answerA: {
       answer: 'Invisibility',
-      traits: ['greedy', 'impulsive', 'careless'],
+      traits: ['predictable'],
     },
     answerB: {
       answer: 'Strength',
-      traits: ['powerful', 'power hungry', 'courage', 'gamer'],
+      traits: ['powerful', 'courage'],
     },
     answerC: {
       answer: 'Mind-reading',
-      traits: ['creative', 'kind', 'leader', 'gamer', 'intelligence'],
+      traits: ['intelligence'],
     },
     answerD: {
       answer: 'Flight',
-      traits: ['greedy', 'stubborn', 'impulsive', 'careless'],
+      traits: ['outspoken'],
     },
   },
   {
@@ -296,19 +289,19 @@ const questions = [
     id: 14,
     answerA: {
       answer: 'Cat',
-      traits: ['greedy', 'impulsive', 'careless', 'stubborn'],
+      traits: ['impulsive', 'greedy'],
     },
     answerB: {
       answer: 'Dog',
-      traits: ['kind', 'loyal', 'gamer', 'intelligence'],
+      traits: ['loyal'],
     },
     answerC: {
       answer: 'Bird',
-      traits: ['creative'],
+      traits: ['responsible'],
     },
     answerD: {
       answer: 'Bear',
-      traits: ['greedy', 'stubborn', 'impulsive', 'careless'],
+      traits: ['powerful'],
     },
   },
   {
@@ -316,19 +309,19 @@ const questions = [
     id: 15,
     answerA: {
       answer: 'Fame and fortune',
-      traits: ['greedy', 'impulsive', 'careless', 'stubborn'],
+      traits: ['outspoken', 'careless', 'greedy'],
     },
     answerB: {
       answer: 'World peace',
-      traits: ['kind', 'empathy'],
+      traits: ['honest', 'kind'],
     },
     answerC: {
       answer: 'My crush to fall in love with me',
-      traits: ['greedy', 'stubborn', 'careless', 'impulsive'],
+      traits: ['power hungry'],
     },
     answerD: {
       answer: 'End world hunger',
-      traits: ['empathy', 'intelligence'],
+      traits: ['responsible', 'kind'],
     },
   },
   {
@@ -336,19 +329,19 @@ const questions = [
     id: 16,
     answerA: {
       answer: 'Who is React',
-      traits: ['stubborn', 'impulsive', 'greedy'],
+      traits: ['honest'],
     },
     answerB: {
       answer: 'Who is React',
-      traits: ['stubborn', 'impulsive', 'greedy'],
+      traits: ['outspoken'],
     },
     answerC: {
       answer: 'Who is React',
-      traits: ['stubborn', 'impulsive', 'greedy'],
+      traits: ['powerful', 'leader'],
     },
     answerD: {
       answer: 'who is react (but in all lowercase)',
-      traits: ['stubborn', 'impulsive', 'greedy'],
+      traits: ['creative'],
     },
   },
 ];
