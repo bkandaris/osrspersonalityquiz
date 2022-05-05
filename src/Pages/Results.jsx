@@ -19,7 +19,6 @@ const Results = () => {
 
   return (
     <div className='results-wrapper'>
-      <h1>You are...</h1>
       <Character
         charName={charName}
         picture={picture}

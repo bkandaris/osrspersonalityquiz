@@ -16,7 +16,7 @@ const Question = ({
 }) => {
   return (
     <div id={id}>
-      <h3 className='question'>{question}</h3>
+      <p className='question'>{question}</p>
       <div className='answers'>
         <p
           onClick={() => {

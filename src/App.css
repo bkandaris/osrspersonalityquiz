@@ -60,6 +60,7 @@
 .question-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 425px;
 }
 
 .question-wrapper > h3 {
@@ -68,8 +69,13 @@
 }
 
 .question {
-  margin: 0.6rem;
+  margin: 0.8rem;
+  padding-bottom: 1rem;
   width: 90%;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 5px white solid;
 }
 
 .answers {
@@ -120,7 +126,7 @@
 .results-wrapper {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url('https://i.gyazo.com/3b6c4ec45b033770ae5838160a191110.png');
+    url('https://i.gyazo.com/8e302f8e85d158a16657835b6a4e6d5e.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -164,8 +170,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
   text-align: left;
+  margin-top: 10%;
 }
 
 .char-wrapper > h3 {
@@ -175,8 +182,8 @@
 }
 
 .char-wrapper > img {
-  max-width: 100px;
-  height: auto;
+  max-width: auto;
+  max-height: 120px;
   margin: 0.8rem;
 }
 
