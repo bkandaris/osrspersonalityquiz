@@ -166,7 +166,7 @@ const Characters = [
       'https://oldschool.runescape.wiki/images/thumb/Wise_Old_Man.png/351px-Wise_Old_Man.png?b2e69',
     alt: 'Wise Old Man',
     description:
-      'A very powerful Saradominist wizard and formerly and adventurer. You play an intricate part in the world. You are helpful to many and make the world a better place.',
+      'A very powerful Saradominist wizard and formerly an adventurer. You play an intricate part in the world. You are helpful to many and make the world a better place.',
     traits: ['intelligence', 'persuasive', 'outspoken'],
     score: 0,
   },
