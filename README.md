@@ -1,6 +1,6 @@
 # JavaScript Quiz Application
 
-This project is hosted at: https://rspersonalityquiz.netlify.app/ \
+This project is hosted at: https://rspersonalityquiz.netlify.app/ 
 
 ### `Why did I build this project?`
 
