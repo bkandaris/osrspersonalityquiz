@@ -187,7 +187,7 @@ const questions = [
     question: 'If I am choosing a snack, I would grab…',
     id: 10,
     answerA: {
-      answer: '3D Doritos',
+      answer: 'Laundrymat candy bar',
       traits: ['persuasive'],
     },
     answerB: {
